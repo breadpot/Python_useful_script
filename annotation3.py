@@ -22,7 +22,7 @@ input_file= open(QUERY, 'U')
 output_file= open("temp2","w+")
 
 line = input_file.readline()
-#print(line)
+
 while line:
 	  f = line.split()
 	  print(f)
@@ -31,7 +31,7 @@ while line:
 	  	  res.append(c[(item)])
 	  output_file.write(str(res)+ '\n')
 	  line = input_file.readline()
-          #print(line)
+          
 input_file.close()
 output_file.close()
 
