@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*- 
 # -*- coding: cp936 -*-
+# usage example in terminal:python annotation3.py dic query (search text in "query" file for relationship in "dic" file)
 
 import itertools
 import re
