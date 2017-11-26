@@ -14,7 +14,7 @@ QUERY= sys.argv[2]
 rawdic = open(RAWDIC, 'U')
 c = dict()
 for line in rawdic:
-	  line = line.strip().split(',')
+	  line = line.strip().split(' ')
 	  c[line[0]] = line[1]
 rawdic.close()
 
