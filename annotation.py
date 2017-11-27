@@ -30,7 +30,7 @@ while line:
 	  res = []
 	  for item in f:
 	  	  res.append(c[(item)])
-	  output_file.write(int(res)+ '\n')
+	  output_file.write(float(res)+ '\n')
 	  line = input_file.readline()
           
 input_file.close()
