@@ -15,7 +15,7 @@ QUERY= sys.argv[2]
 rawdic = open(RAWDIC, 'U')
 c = dict()
 for line in rawdic:
-	  line = line.strip().split(' ')
+	  line = line.strip().split(',')
 	  c[line[0]] = line[1]
 rawdic.close()
 
@@ -30,7 +30,7 @@ while line:
 	  res = []
 	  for item in f:
 	  	  res.append(c[(item)])
-	  output_file.write(str(res)+ '\n')
+	  output_file.write(int(res)+ '\n')
 	  line = input_file.readline()
           
 input_file.close()
